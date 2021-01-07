@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Receipe Index</title>
+  <meta name="description" content="Les recettes Mamossa utilisés dans le menu maker.">
+  <meta name="author" content="Mamossa">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav" id="myTopnav">
+      <a href="#receipeBook" class="active">Recettes</a>
+      <a href="#ingredientIndex">Indredient</a>
+      <a href="#menu">Week's Menu</a>
+      <a href="#theList">Liste de Courses</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  </header>
+
+
+  <div class="pageMenu">
+    <div class="button" id="searchfield">
+    </div>
+    <div class="button" id="searchbutton">
+    </div>
+    <div class="button" id="addNew">
+    </div>
+  </div>
+
+  <div class="resultTable">
+
+  </div>
+    <!-- Pop up module to Create a New Record -->
+<div id="wrapper">
+  <p><a class="button" href="#popup1">Click Me</a></p>
+	<p><a class="button" href="#popup2">Click Me Too</a></p>
+</div>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Ingredient</h2>
+		<a class="close" href="#">&times;</a>
+    <a class="cancel" href="#"></a>
+		<div class="content">
+      <form>
+        <div class="group">
+          <input type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Ingredient Name</label>
+        </div>
+        <div class="group">
+          <input type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Qty Type</label>
+          <select name="pets" id="pet-select">
+            <option value="">--Please choose an option--</option>
+            <option value="dog">grams</option>
+            <option value="cat">Units</option>
+          </select>
+        </div>
+      </form>
+		</div>
+    <div class="button" id="saveButton">
+    </div>
+	</div>
+</div>
+
+    <!-- Pop up module to edit a record -->
+    <div id="popup2" class="overlay">
+    	<div class="popup">
+    		<h2>Ingredient ID</h2>
+        <h3>ID 123</h3>
+    		<a class="close" href="#">&times;</a>
+        <a class="cancel" href="#"></a>
+    		<div class="content">
+          <form>
+            <div class="group">
+              <input type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Ingredient Name</label>
+            </div>
+            <div class="group">
+              <input type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Qty Type</label>
+              <select name="pets" id="pet-select">
+                <option value="">--Please choose an option--</option>
+                <option value="dog">grams</option>
+                <option value="cat">Units</option>
+              </select>
+            </div>
+          </form>
+    		</div>
+        <div class="button" id="saveButton">
+        </div>
+    	</div>
+    </div>
+
+  <script src="js/scripts.js"></script>
+  <footer>
+  </footer>
+</body>
+
+</html>
